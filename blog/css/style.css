@@ -19,6 +19,7 @@ body > header {
   top: 0;
   position: fixed;
   padding: 10px 0 0;
+  z-index: 1;
 }
 
 #logo {
@@ -107,12 +108,30 @@ article aside li.data {
 
 article .texto {
   clear: both;
-  margin-top: 30px;
+  margin: 30px 0;
+}
+
+footer.readmore {
+  margin-bottom: 20px;
+}
+
+footer.readmore a {
+  background-color: #FFFFFF;
+  border: 2px solid #BFBFBF;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background 0.35s ease-in-out 0s;
+  width: 105px;
+}
+
+footer.readmore a:hover {
+  background-color: #f2f2e8;
 }
 
 footer#main-footer {
   clear: both;
-  margin-top: 50px;
   min-height: 120px;
   background-color: #F07057;
   padding: 15px 0;
