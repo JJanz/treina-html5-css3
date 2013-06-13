@@ -3,23 +3,33 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <title>Blog Legal</title>
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <script type="text/javascript" src="./javascript/modernizr.js"></script>
   </head>
   <body>
     <header>
-      <h1>Meu site</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Contato</a></li>
-        </ul>
-      </nav>
+      <div id="container">
+        <div id="logo">
+          <img src="./images/logo.png" title="Site legal" />
+        </div>
+        <hgroup id="sitename">
+          <h1><a href="#">Meu site</a></h1>
+        </hgroup>
+        <nav>
+          <ul id="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <div id="conteudo">
       <section id="principal">
         <article class="post">
           <header>
-            <h1>Título do post</h1>
+            <h2><a href="#">Título do post</a></h2>
           </header>
           <aside>
             <ul>
@@ -40,7 +50,7 @@
         </article>
         <article class="post">
           <header>
-            <h1>Título do post</h1>
+            <h2><a href="#">Título do post</a></h2>
           </header>
           <aside>
             <ul>
@@ -61,7 +71,7 @@
         </article>
         <article class="post">
           <header>
-            <h1>Título do post</h1>
+            <h2><a href="#">Título do post</a></h2>
           </header>
           <aside>
             <ul>
@@ -90,10 +100,7 @@
         </div>
       </aside>
     </div>
-    <footer>
-      <nav>
-        Navegação (geralmente menu)
-      </nav>
+    <footer id="main-footer">
       <address>
         &copy; Notícias Mais Agência de Notícias Ltda.<br />
         Notícias Mais!<br />
