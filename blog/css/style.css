@@ -150,3 +150,7 @@ form .campo{
 form label {
   display: block;
 }
+
+.inline {
+  display: inline;
+}
