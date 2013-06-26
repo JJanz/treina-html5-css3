@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Blog Legal</title>
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <script type="text/javascript" src="./javascript/modernizr.js"></script>
+  </head>
+  <body>
+    <header>
+      <div id="container">
+        <div id="logo">
+          <img src="./images/logo.png" title="Site legal" />
+        </div>
+        <hgroup id="sitename">
+          <h1><a href="#">Meu site</a></h1>
+        </hgroup>
+        <nav>
+          <ul id="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div id="conteudo">
+      <section id="principal">
+        <article class="post">
+          <header>
+            <h2><a href="#">Orçamento</a></h2>
+          </header>
+          <aside>
+            <ul>
+              <li class="autor">Criado por fulano</li>
+              <li class="data">15/05/2013 - 14:22</li>
+            </ul>
+          </aside>
+          <form action="mailto:email@exemplo.com" method="post" enctype="text/plain">
+            <section class="texto">
+              <fieldset>
+                <legend>Dados Pessoais</legend>
+                <div class="campo">
+                    <label for="nome">Nome</label><input type="text" id="nome" placeholder="Nome Completo" />
+                </div>
+                <div class="campo">
+                    <label for="nasc">Nascimento</label><input type="date" id="nasc" placeholder="Data de nascimento" />
+                </div>
+                <div class="campo">
+                    <label>Sexo</label>
+                <input type="radio" id="sexomasc" value="M" name="sexo" /><label for="sexomasc">Masculino</label>
+                <input type="radio" id="sexofem" value="F" name="sexo" /><label for="sexofem">Feminino</label>
+                </div>
+                <div class="campo">
+                    <label for="uf">UF</label>
+                    <select id="uf">
+                        <optgroup label="Norte">
+                            <option value="AC">Acre</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="PA">Pará</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="TO">Tocantins</option>
+                        </optgroup>
+                        <optgroup label="Nordeste">
+                            <option value="AL">Alagoas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="SE">Sergipe</option>
+                        </optgroup>
+                        <optgroup label="Centro-Oeste">
+                            <option value="DF">Distrito Federal</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MT">Mato Grosso</option>
+                        </optgroup>
+                        <optgroup label="Sudeste">
+                            <option value="ES">Espírito Santo</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="SP">São Paulo</option>
+                        </optgroup>
+                        <optgroup label="Sul">
+                            <option value="PR">Paraná</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="SC">Santa Catarina</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label for="mail">E-mail</label><input type="email" id="mail" placeholder="Endereço de e-mail" />
+                </div>
+                <div class="campo">
+                    <label for="site">Website</label><input type="url" id="site" placeholder="Endereço de website" />
+                </div>
+                <div class="campo">
+                    <label for="browser">Navegador</label><input list="listabrowser" id="browser" placeholder="Navegador preferido" />
+                </div>
+                <datalist id="listabrowser">
+                    <option value="Internet Explorer">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                </datalist>
+              </fieldset>
+              <fieldset>
+                <legend>Mensagem</legend>
+                <div class="campo">
+                    <label for="msg">Descrição</label><textarea id="msg"></textarea>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>Opções</legend>
+                <div class="campo">
+                    <input type="checkbox" id="copiaemail" value="copia" /><label for="copiaemail">Receber cópia do email enviado</label>
+                </div>
+                <div class="campo">
+                    <label for="formacontato">Preferência de contato</label>
+                    <select id="formacontato" multiple="multiple">
+                        <option>E-mail</option>
+                        <option>Telefone</option>
+                        <option></option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label for="arqs">Anexar imagem(ns)</label><input type="file" id="arqs" placeholder="Selecione arquivos de imagem" accept="image/*" />
+                </div>
+                <div class="campo">
+                    <label for="urgenciacod">Urgência</label><input type="range" id="urgenciacod" max="2" min="0" step="1" value="0" oninput="javascript:document.getElementById('urgencia').value=this.value+' '+document.getElementById('urgenciatxt'+this.value).value;" />
+                    <input type="hidden" id="urgenciatxt0" value="Normal" />
+                    <input type="hidden" id="urgenciatxt1" value="Logo!" />
+                    <input type="hidden" id="urgenciatxt2" value="Alguém tá morrendo!" />
+                    <output id="urgencia" />
+                </div>
+              </fieldset>
+            </section>
+            <footer class="readmore">
+              <input type="submit" value="Enviar" />
+              <input type="reset" value="Limpar" />
+            </footer>
+          </form>
+        </article>
+      </section>
+      <aside id="lateral">
+        <div id="search">
+          <form>
+            <label for="barra">Busca</label>
+            <input type="search" placeholder="Buscar..." />
+          </form>
+        </div>
+      </aside>
+    </div>
+    <footer id="main-footer">
+      <address>
+        &copy; Notícias Mais Agência de Notícias Ltda.<br />
+        Notícias Mais!<br />
+        Rua Fictícia, 123, Bairro Novo, Cidade Velha<br />
+        Mato Grosso do Norte do Sul &mdash; Brasil<br />
+        CEP: 12345-678<br />
+        <a href="mailto:noticiasmais@exemplo.com">noticiasmais@exemplo.com</a>
+      </address>
+    </footer>
+  </body>
+</html>

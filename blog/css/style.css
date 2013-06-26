@@ -151,6 +151,11 @@ form label {
   display: block;
 }
 
+form input[type="checkbox"] + label,
+form input[type="radio"] + label {
+  display: inline;
+}
+
 .inline {
   display: inline;
 }
