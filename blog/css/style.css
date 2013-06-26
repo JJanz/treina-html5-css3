@@ -74,6 +74,7 @@ nav {
 #principal {
   width: 72.9167%;
   float: left;
+  padding-bottom: 20px;
 }
 
 #lateral {
@@ -140,4 +141,12 @@ footer#main-footer {
 footer#main-footer address {
   max-width: 960px;
   margin: 0 auto;
+}
+
+form .campo{
+  padding: 5px 0;
+}
+
+form label {
+  display: block;
 }
