@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Blog Legal</title>
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="container">
+        <div id="logo">
+          <img src="./images/logo.png" title="Site legal" />
+        </div>
+        <hgroup id="sitename">
+          <h1><a href="#">Meu site</a></h1>
+        </hgroup>
+        <nav>
+          <ul id="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div id="conteudo">
+      <section id="principal">
+        <h2><a>Contato</a></h2>
+        <div class="intro">
+          <p> Use o formulário abaixo para entrar em contato conosco.</p>
+          <p> Preencha os campos com as informações de contato apropriadas, que retornaremos assim que possível.</p>
+        </div>
+        <form id="contato" action="" method="post">
+          <fieldset>
+            <legend>Dados do contato</legend>
+            <div class="campo">
+              <label for="nome">Nome</label>
+              <input type="text" name="nome" placeholder="Digite seu nome" size="60" />
+            </div>
+            <div class="campo">
+              <label for="sexo">Sexo</label>
+              <input type="radio" name="sexo" value="M" /> Masculino
+              <input type="radio" name="sexo" value="F" /> Feminino
+            </div>
+            <div class="campo">
+              <label for="email">E-mail</label>
+              <input type="email" name="email" placeholder="Digite seu e-mail" size="30" />
+            </div>
+            <div class="campo">
+              <label for="telefone">Telefone</label>
+              <input type="tel" name="telefone" placeholder="Digite seu telefone" size="15" />
+            </div>
+            <div class="campo">
+              <label for="">Assunto</label>
+              <select id="assunto" name="assunto">
+                <option value="">Escolha um assunto</option>
+                <option value="marketing">Marketing</option>
+                <option value="editorial">Editorial</option>
+                <option value="pessoal">Pessoal</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+          </fieldset>
+          <div class="campo">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" cols="70" rows="5" name="mensagem" placeholder="Digite sua mensagem..."></textarea>
+          </div>
+          <div class="campo">
+            <input type="checkbox" id="news" name="news" /> <label for="news">Marque se deseja se inscrever na nossa <em>Newsletter</em></label>
+          </div>
+          <div class="actions">
+            <button> Cancelar </button>
+            <input type="submit" value="Enviar contato">
+          </div>
+        </form>
+      </section>
+      <aside id="lateral">
+        <div id="search">
+          <form>
+            <label for="barra">Busca</label>
+            <input type="search" placeholder="Buscar..." />
+          </form>
+        </div>
+      </aside>
+    </div>
+    <footer id="main-footer">
+      <address>
+        &copy; Notícias Mais Agência de Notícias Ltda.<br />
+        Notícias Mais!<br />
+        Rua Fictícia, 123, Bairro Novo, Cidade Velha<br />
+        Mato Grosso do Norte do Sul &mdash; Brasil<br />
+        CEP: 12345-678<br />
+        <a href="mailto:noticiasmais@exemplo.com">noticiasmais@exemplo.com</a>
+      </address>
+    </footer>
+  </body>
+</html>

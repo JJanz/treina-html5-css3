@@ -1,0 +1,198 @@
+body {
+  background-color: #F2F2E8;
+  color: #8E8E8E;
+}
+
+a {
+  color: #F07057;
+  text-decoration: none;
+}
+
+body > header {
+  background-color: #FFF;
+  height: 100px;
+  width: 100%;
+  top: 0;
+  padding: 10px 0 0;
+  z-index: 1;
+}
+
+#logo {
+  float: left;
+  margin: 10px 0 0;
+}
+
+#sitename {
+  float: left;
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+
+header #container {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+nav {
+  float: right;
+}
+
+#menu {
+  list-style: none;
+}
+
+#menu li {
+  float: left;
+  padding: 0 0 0 30px;
+  margin-top: 10px;
+}
+
+#menu li a {
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-top: 10px;
+  border-top: 2px solid #Fff;
+}
+
+#menu li a:hover {
+  border-top: 2px solid #F07057;
+}
+
+#conteudo {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+#principal {
+  width: 72.9167%;
+  float: left;
+  padding-bottom: 20px;
+}
+
+#lateral {
+  width: 22.9167%;
+  float: left;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+article header h2 {
+  margin-bottom: 0;
+}
+
+article aside {
+  background-color: blue;
+}
+
+article aside ul {
+  list-style: none;
+  color: #BFBFBF;
+  margin: 0;
+  padding: 0;
+}
+
+article aside li {
+  float: left;
+}
+
+article aside li.data {
+  margin-left: 10px;
+}
+
+article .texto {
+  clear: both;
+  margin: 30px 0;
+}
+
+article figure {
+  border-bottom: 1px dotted #BFBFBF;
+  border-top: 1px dotted #BFBFBF;
+  margin: 1.5em 0;
+  position: relative;
+}
+
+article figure figcaption {
+  font-style: italic;
+  line-height: 1.5em;
+  margin: 0.75em 0;
+  text-align: center;
+}
+
+footer.readmore {
+  margin-bottom: 20px;
+}
+
+footer.readmore a {
+  background-color: #FFFFFF;
+  border: 2px solid #BFBFBF;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 105px;
+}
+
+footer.readmore a:hover {
+  background-color: #f2f2e8;
+}
+
+footer#main-footer {
+  clear: both;
+  min-height: 120px;
+  background-color: #F07057;
+  padding: 15px 0;
+  color: #FFF;
+}
+
+footer#main-footer p {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+form .campo{
+  padding: 5px 0;
+}
+
+form label {
+  display: block;
+}
+
+form input[type="checkbox"] + label,
+form input[type="radio"] + label {
+  display: inline;
+}
+
+.inline {
+  display: inline;
+}
+
+#canvas {
+  margin: 10px;
+  padding: 10px;
+  background: #ffffff;
+}
+
+table caption {
+  border: 1px solid #F07057;
+  border-bottom: none;
+  border-radius: 5px 5px 0 0;
+  font-weight: bold;
+}
+
+tr {
+  border: 1px solid #F07057;
+}
+
+tr:hover td {
+  background-color: #F0C0B6;
+  color: #666;
+}
+
+th {
+  color: #F07057;
+}
+
+td {
+  padding: 5px;
+  font-size: 85%;
+}

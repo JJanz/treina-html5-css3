@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Meu blog</title>
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="./css/estilo.css" />
+
+  </head>
+  <body>
+    <header>
+      <div id="container">
+        <div id="logo">
+          <img src="./images/logo.png" title="Site legal" />
+        </div>
+        <hgroup id="sitename">
+          <h1><a href="#">Meu blog</a></h1>
+        </hgroup>
+        <nav>
+          <ul id="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div id="conteudo">
+      <section id="principal">
+        <article class="post">
+          <header>
+            <h2><a href="#">Post com áudio</a></h2>
+          </header>
+          <aside>
+            <ul>
+              <li class="autor">Criado por fulano</li>
+              <li class="data">15/05/2013 - 14:22</li>
+            </ul>
+          </aside>
+          <section class="texto">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat nulla a sem pellentesque, sed adipiscing velit mollis. Fusce mi purus, congue non malesuada a, venenatis quis massa. Nullam bibendum luctus varius. Morbi hendrerit, libero et malesuada ultrices, dolor quam viverra nulla, vitae dapibus orci leo a tortor. Sed blandit placerat magna sed feugiat. Aliquam placerat auctor est nec euismod. Pellentesque faucibus urna urna, vitae consequat felis bibendum id. Mauris ultrices, massa nec facilisis feugiat, leo lorem adipiscing ante, quis sagittis lacus ipsum vitae augue. Integer molestie mi sit amet ullamcorper consectetur. Curabitur in viverra nulla.</p>
+            <p>
+              <audio controls>
+                <source src="./media/audio.ogg" type="audio/ogg">
+                <source src="./media/audio.mp3" type="audio/mpeg">
+                Seu navegador não suporta áudio
+              </audio>
+            </p>
+          </section>
+          <footer class="readmore">
+            <a href="#">Leia mais</a>
+          </footer>
+        </article>
+        <article class="post">
+          <header>
+            <h2><a href="#">Post com vídeo</a></h2>
+          </header>
+          <aside>
+            <ul>
+              <li class="autor">Criado por fulano</li>
+              <li class="data">15/05/2013 - 14:22</li>
+            </ul>
+          </aside>
+          <section class="texto">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat nulla a sem pellentesque, sed adipiscing velit mollis. Fusce mi purus, congue non malesuada a, venenatis quis massa. Nullam bibendum luctus varius. Morbi hendrerit, libero et malesuada ultrices, dolor quam viverra nulla, vitae dapibus orci leo a tortor. Sed blandit placerat magna sed feugiat. Aliquam placerat auctor est nec euismod. Pellentesque faucibus urna urna, vitae consequat felis bibendum id. Mauris ultrices, massa nec facilisis feugiat, leo lorem adipiscing ante, quis sagittis lacus ipsum vitae augue. Integer molestie mi sit amet ullamcorper consectetur. Curabitur in viverra nulla.</p>
+            <p>
+            <video width="320" height="240" controls>
+              <source src="./media/small.ogv" type="video/ogg">
+              <source src="./media/small.webm" type="video/webm">
+              <source src="./media/small.mp4" type="video/webm">
+              Seu navegador não suporta vídeos
+            </video>
+            </p>
+          </section>
+          <footer class="readmore">
+            <a href="#">Leia mais</a>
+          </footer>
+        </article>
+        <article class="post">
+          <header>
+            <h2><a href="#">Post SVG</a></h2>
+          </header>
+          <aside>
+            <ul>
+              <li class="autor">Criado por fulano</li>
+              <li class="data">15/05/2013 - 14:22</li>
+            </ul>
+          </aside>
+          <section class="texto">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat nulla a sem pellentesque, sed adipiscing velit mollis. Fusce mi purus, congue non malesuada a, venenatis quis massa. Nullam bibendum luctus varius. Morbi hendrerit, libero et malesuada ultrices, dolor quam viverra nulla, vitae dapibus orci leo a tortor. Sed blandit placerat magna sed feugiat. Aliquam placerat auctor est nec euismod. Pellentesque faucibus urna urna, vitae consequat felis bibendum id. Mauris ultrices, massa nec facilisis feugiat, leo lorem adipiscing ante, quis sagittis lacus ipsum vitae augue. Integer molestie mi sit amet ullamcorper consectetur. Curabitur in viverra nulla.</p>
+            <p>
+              <svg id="svgelem" height="200" xmlns="http://www.w3.org/2000/svg">
+                  <circle id="redcircle" cx="50" cy="50" r="50" fill="red" />
+              </svg>
+              <svg id="svgelem" height="200" xmlns="http://www.w3.org/2000/svg">
+                  <rect id="redrect" width="300" height="100" fill="red" />
+              </svg>
+              <svg id="svgelem" height="200" xmlns="http://www.w3.org/2000/svg">
+                 <defs>
+                    <radialGradient id="gradient" cx="50%" cy="50%" r="50%"
+                    fx="50%" fy="50%">
+                    <stop offset="0%" style="stop-color:rgb(200,200,200);
+                    stop-opacity:0"/>
+                    <stop offset="100%" style="stop-color:rgb(0,0,255);
+                    stop-opacity:1"/>
+                    </radialGradient>
+                 </defs>
+                 <ellipse cx="100" cy="50" rx="100" ry="50"
+                    style="fill:url(#gradient)" />
+              </svg>
+              <svg style="float:right" width="81" height="127" xmlns="http://www.w3.org/2000/svg">
+               <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+               <g>
+                <title>Simple tree</title>
+                <rect fill="#7f3f00" stroke="#000000" stroke-width="0" x="32.26172" y="50.26172" width="17" height="77" id="svg_3"/>
+                <circle fill="#007f3f" stroke="#000000" stroke-width="0" cx="40.26172" cy="40.26172" r="40.26172" id="svg_1"/>
+               </g>
+              </svg>
+            </p>
+          </section>
+          <footer class="readmore">
+            <a href="#">Leia mais</a>
+          </footer>
+        </article>
+        <article class="post">
+          <header>
+            <h2><a href="#">Post com uso de Canvas</a></h2>
+          </header>
+          <aside>
+            <ul>
+              <li class="autor">Criado por fulano</li>
+              <li class="data">15/05/2013 - 14:22</li>
+            </ul>
+          </aside>
+          <section class="texto">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat nulla a sem pellentesque, sed adipiscing velit mollis. Fusce mi purus, congue non malesuada a, venenatis quis massa. Nullam bibendum luctus varius. Morbi hendrerit, libero et malesuada ultrices, dolor quam viverra nulla, vitae dapibus orci leo a tortor. Sed blandit placerat magna sed feugiat. Aliquam placerat auctor est nec euismod. Pellentesque faucibus urna urna, vitae consequat felis bibendum id. Mauris ultrices, massa nec facilisis feugiat, leo lorem adipiscing ante, quis sagittis lacus ipsum vitae augue. Integer molestie mi sit amet ullamcorper consectetur. Curabitur in viverra nulla.</p>
+            <p>
+              <canvas id="canvas" width="320" height="280">
+                Canvas not supported
+              </canvas>
+            </p>
+          </section>
+          <footer class="readmore">
+            <a href="#">Leia mais</a>
+          </footer>
+        </article>
+      </section>
+    </div>
+    <footer id="main-footer">
+      <p>Um rodapé</p>
+    </footer>
+    <script type="text/javascript" src="./javascript/canvas.js"></script>
+  </body>
+</html>
