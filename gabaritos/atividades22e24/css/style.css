@@ -1,8 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700);
 
 body {
-  background-color: #F2F2E8;
   color: #8E8E8E;
+  background: url(../images/bg1.png) no-repeat left 150px, url(../images/bg2.png) no-repeat right 150px;
+  background-color: #F2F2E8;
   font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
 }
 
@@ -25,12 +26,26 @@ body > header {
 #logo {
   float: left;
   margin: 10px 0 0;
+  transition: transform 1s;
+}
+
+#logo:hover {
+  transform: rotate(45deg) scale(0.5, 0.5);
+  transition: transform 2s;
 }
 
 #sitename {
   float: left;
   margin-left: 10px;
   text-transform: uppercase;
+}
+
+#sitename a {
+  transition: color 2s;
+}
+
+#sitename a:hover {
+  color: purple;
 }
 
 header #container {
@@ -51,6 +66,7 @@ nav {
   padding: 0 0 0 30px;
   margin-top: 10px;
   letter-spacing: 4px;
+  text-shadow: 1px 1px 1px #ccc, 1px 1px 1px #F07057;
 }
 
 #menu li a {
@@ -133,7 +149,7 @@ footer.readmore a:hover {
 footer#main-footer {
   clear: both;
   min-height: 120px;
-  background-color: #F07057;
+  background-image: linear-gradient(to left, #F07057, #A84F3D);
   padding: 15px 0;
   color: #FFF;
 }
