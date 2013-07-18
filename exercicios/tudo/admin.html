@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Blog Legal</title>
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" ></script>
+    <script src="javascript/modernizr.js"></script>
+    <script src="./javascript/admin.js" ></script>
+  </head>
+  <body>
+    <header>
+      <div id="container">
+        <div id="logo">
+          <img src="./images/logo.png" title="Site legal" />
+        </div>
+        <hgroup id="sitename">
+          <h1><a href="#">Meu site</a></h1>
+        </hgroup>
+        <nav>
+          <ul id="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div id="conteudo">
+      <form id="formulario" method="post">
+        <label for="titulo">Título</label>
+        <input type="text" name="titulo" id="titulo" /><br/>
+        <label for="autor">Autor</label>
+        <input type="text" name="autor" id="autor" /><br/>
+        <label for="corpo">Corpo</label>
+        <textarea name="corpo" id="corpo" cols="60" rows="5"></textarea><br/>
+
+        <button id="salvar">Salvar</button>
+      </form>
+    </div>
+    <footer id="main-footer">
+      <address>
+        &copy; Notícias Mais Agência de Notícias Ltda.<br />
+        Notícias Mais!<br />
+        Rua Fictícia, 123, Bairro Novo, Cidade Velha<br />
+        Mato Grosso do Norte do Sul &mdash; Brasil<br />
+        CEP: 12345-678<br />
+        <a href="mailto:noticiasmais@exemplo.com">noticiasmais@exemplo.com</a>
+      </address>
+    </footer>
+  </body>
+</html>
